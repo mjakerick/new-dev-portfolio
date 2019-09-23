@@ -1,21 +1,24 @@
-$(window).on('scroll', function(){
-  if($(window).scrollTop()){
-    $('nav').addClass('black');
-  } else {
-    $('nav').removeClass('black');
-  }
-})
+$( document ).ready(function() {
 
-// var menu = $('.m1');
-//
-// $(window).scroll(function () {
-//     var y = $(this).scrollTop();
-//     var z = $('#portfolio').offset().top;
-//
-//     if (y >= z) {
-//         menu.removeClass('active').addClass('not-active');
-//     }
-//     else{
-//         menu.removeClass('light-menu').addClass('menu');
-//     }
-// });
+  $(window).on('scroll', function(){
+    if($(window).scrollTop()){
+      $('nav').addClass('black');
+    } else {
+      $('nav').removeClass('black');
+    }
+  });
+
+  //smoothscroll
+  $('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+    var target = this.hash,
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 500, 'swing', function () {
+      window.location.hash = target;
+    });
+  });
+
+
+});
