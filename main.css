@@ -104,14 +104,14 @@ section.home {
   margin: 0;
   text-align: center;
   font-size: 4em;
-  color: rgb(21,33,44)
+  color: black;
 }
 
 .itme h1{
   margin: 0;
   text-align: center;
   font-size: 2em;
-  color: rgb(21,33,44);
+  color: black;
 }
 
 .itme img{
@@ -120,6 +120,17 @@ section.home {
   margin-left: auto;
   margin-right: auto;
   height: 300px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials img{
+  padding: 2% 2%;
+  height: 35px;
+  margin: 0;
 }
 
 section.skills {
@@ -147,11 +158,11 @@ section.about {
 section.about h1{
   padding-top: 4em;
   margin: 0;
-  color: rgb(21,33,44);
+  color: black;
 }
 
 section.about p{
-  color: rgb(21,33,44);
+  color: black;
 }
 
 section.portfolio {
@@ -179,9 +190,18 @@ section.contact {
 section.contact h1{
   padding-top: 4em;
   margin: 0;
-  color: rgb(21,33,44);
+  color: black;
 }
 
 section.contact p{
-  color: rgb(21,33,44);
+  color: black;
+}
+
+footer {
+  padding-top: 20px;
+  height: 5vh;
+  background: rgb(21,33,44);
+  color: rgb(234,234,234);
+  text-align: center;
+  font-size: 17px;
 }
