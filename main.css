@@ -6,6 +6,7 @@ body {
 }
 
 nav {
+  z-index: 90;
   position: fixed;
   top: 0;
   left: 0;
@@ -79,7 +80,6 @@ nav ul li a:hover {
 }
 
 section.home {
-  z-index: -1;
   width: 100%;
   height: 100vh;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -123,14 +123,64 @@ section.home {
 }
 
 .socials {
+  padding-top: 1%;
   display: flex;
   justify-content: center;
 }
 
 .socials img{
-  padding: 2% 2%;
+  padding: 0 25px;
   height: 35px;
   margin: 0;
+  margin: 0 5px;
+}
+
+.linkedIn {
+  position: relative;
+}
+
+.linkedIn .img-top {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.linkedIn:hover .img-top {
+  visibility: visible;
+}
+
+.gitHub {
+  position: relative;
+}
+
+.gitHub .img-top {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.gitHub:hover .img-top {
+  visibility: visible;
+}
+
+.resume {
+  position: relative;
+}
+
+.resume .img-top {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.resume:hover .img-top {
+  visibility: visible;
 }
 
 section.skills {

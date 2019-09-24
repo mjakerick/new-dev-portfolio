@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+  // nav scroll style
   $(window).on('scroll', function(){
     if($(window).scrollTop()){
       $('nav').addClass('black');
@@ -8,7 +8,7 @@ $( document ).ready(function() {
     }
   });
 
-  //smoothscroll
+  //smooth scroll
   $('a[href^="#"]').on('click',function (e) {
     e.preventDefault();
     var target = this.hash,
