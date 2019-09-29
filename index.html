@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Rick</title>
     <!-- googlefonts -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -29,14 +30,14 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <section id="home" class="home">
         <div class="itme">
-          <img src="images/profile.png" alt="">
+          <img class="profile" src="images/profile.png" alt="">
           <h4>Michael "Jake" Rick</h4>
           <h1>Web Developer</h1>
           <div class="socials">
@@ -130,21 +131,40 @@
 
       <section id="about" class="about">
         <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>
+        I’m naturally inquisitive and enjoy figuring out how things work. I have a defined sense of aesthetic and enjoy making thoughtful, engaging, and functional web applications that have a simple, clean and distinct design.
+        <br><br>
+        I have experience building web applications using the MEAN stack (MongoDB, Express, Angular, Node), MERN stack (MongoDB, Express, React, Node), and using Ruby on Rails. I have a strong foundation in web design and development as I've recently completed General Assembly's Software Engineering and Web Development Immersive bootcamp.
+        <br><br>
+        Before transitioning into development, I was attending the University of California, Santa Barbara to pursue a degree in Biological Anthropology. I planned to go into the biotech field, but quickly became immersed in Web Development and I love it.
+      </p>
       </section>
 
-      <section id="portfolio" class="portfolio">
+      <!-- <section id="portfolio" class="portfolio">
         <h1>Portfolio</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </section>
+      </section> -->
 
       <section id="contact" class="contact">
         <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <form action="">
+          <label for="email">email</label>
+          <input type="text" id="email" name="email" placeholder="Your email.."><br>
+
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.."><br>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+
+          <input type="submit" value="Submit">
+        </form>
       </section>
     </div>
     <footer>
-      © Jake Rick. 1.1.1
+      <div class="foot">
+        © Jake Rick. 1.1.1
+      </div>
     </footer>
   </body>
 </html>
