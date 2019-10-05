@@ -288,9 +288,46 @@ footer {
 } */
 
 /* Tablet */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  nav {
+    height: 7vw;
+    padding: 1vw 5vw;
+  }
 
-} */
+  nav.black {
+    height: 5vw;
+    padding: 1vw 5vw;
+  }
+
+  nav .logo img {
+    border-radius: .5vw;
+    border: 1px solid black;
+    height: 5vw;
+    transition: .5s;
+  }
+
+  nav.black .logo img {
+    height: 3vw;
+    border: 1px solid white;
+  }
+
+  nav ul li {
+    padding-left: 1vw;
+  }
+
+  nav ul li a {
+    line-height: 5vw;
+    border-radius: .5vw;
+    padding: .5vw 1.5vw;
+    font-size: .75em
+  }
+
+  nav.black ul li a {
+    line-height: 3vw;
+    padding: .5vw 1.5vw;
+    font-size: .75em
+  }
+}
 
 /* 4k */
 @media screen and (width: 2560px) {
