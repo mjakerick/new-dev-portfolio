@@ -283,12 +283,118 @@ footer {
 } */
 
 /* Mobile L */
-/* @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
+  nav {
+    height: 18vw;
+    padding: 1vw 5vw;
+  }
 
-} */
+  nav.black {
+    height: 14vw;
+    padding: 1vw 5vw;
+  }
+
+  nav .logo img {
+    border-radius: .5vw;
+    border: 1px solid black;
+    height: 15vw;
+    transition: .5s;
+  }
+
+  nav.black .logo img {
+    height: 11vw;
+    border: 1px solid white;
+  }
+
+  nav ul li {
+    padding-left: 1vw;
+  }
+
+  nav ul li a {
+    line-height: 15vw;
+    border-radius: .5vw;
+    padding: 1vw 2vw;
+    font-size: 1em
+  }
+
+  nav.black ul li a {
+    line-height: 12vw;
+    border-radius: .5vw;
+    padding: 1vw 2vw;
+    font-size: 1em
+  }
+
+  .itme h1{
+    margin: 0;
+    text-align: center;
+    font-size: 9vw;
+    color: black;
+  }
+
+  .itme h4{
+    margin: 0;
+    text-align: center;
+    font-size: 5vw;
+    color: black;
+  }
+
+  .itme img{
+    padding-top: 30%;
+  }
+
+  .profile {
+    max-width: 50%;
+  }
+
+  .socials {
+    padding-top: 2%;
+  }
+
+  .socials img{
+    padding: 0 25px;
+    height: 5vh;
+    margin: 0;
+    margin: 0 5px;
+  }
+
+  .skills {
+    height: 31vh;
+  }
+
+  .skills h1 {
+    visibility: hidden;
+  }
+
+  svg {
+    padding: 2vw 2vw;
+    height: 12vw;
+  }
+
+  .slack {
+    visibility: hidden;
+  }
+
+  section.about {
+    padding: 4vh;
+    height: 43vh;
+    background: rgb(234,234,234);
+  }
+
+  section.about h1{
+    font-size: 5vw;
+  }
+
+  section.about p{
+    font-size: 3vw;
+  }
+
+  .foot {
+    font-size: 3vw;
+  }
+}
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (width: 768px) {
   nav {
     height: 7vw;
     padding: 1vw 5vw;
@@ -326,6 +432,10 @@ footer {
     line-height: 3vw;
     padding: .5vw 1.5vw;
     font-size: .75em
+  }
+
+  .itme img{
+    padding-top: 20%;
   }
 }
 
