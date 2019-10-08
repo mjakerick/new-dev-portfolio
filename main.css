@@ -206,6 +206,47 @@ svg {
   height: 7vw;
 }
 
+/* .atom:hover {
+  position: relative;
+  fill: #ec008c;
+    opacity: 1;
+} */
+
+/* .atomtext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+} */
+
+/* .atom .atomtext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* .atom:hover .atomtext {
+  visibility: visible;
+  opacity: 1;
+} */
+
 section.about {
   padding: 4vh;
   height: 43vh;
